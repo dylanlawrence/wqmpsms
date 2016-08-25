@@ -1,5 +1,4 @@
-
-* Modules *
+ Modules *
     "require": {
         "composer/installers": "^1.0.20",
         "drupal-composer/drupal-scaffold": "^2.0.1",
@@ -32,3 +31,4 @@
         "drupal/views_autocomplete_filters" : "~8.0",
         "drupal/views_templates" : "~8.0"
     }
+
