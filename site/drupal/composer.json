@@ -1,0 +1,86 @@
+{
+    "name": "fuscoe/wqmpsms",
+    "description": "A WQMP Plan Management Website",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dylan",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.0.20",
+        "drupal-composer/drupal-scaffold": "^2.0.1",
+        "drupal/core": "8.*",
+        "drupal/address": "*",
+        "ext-bcmath": "*",
+        "commerceguys/intl": "*",
+        "drupal/admin_toolbar": "*",
+        "drupal/browsersync": "*",
+        "drupal/calendar": "*",
+        "drupal/cck_select_other": "*",
+        "drupal/composer_manager": "*",
+        "drupal/ctools": "*",
+        "drupal/double_field": "*",
+        "drupal/ds": "*",
+        "drupal/entity_browser": "*",
+        "drupal/entity_print": "*",
+        "drupal/field_formatter_class": "*",
+        "drupal/field_group": "*",
+        "drupal/geolocation": "*",
+        "drupal/inline_entity_form": "*",
+        "drupal/jsonb": "*",
+        "drupal/restui": "*",
+        "drupal/rules": "*",
+        "drupal/scheduled_updates": "*",
+        "drupal/select_or_other": "*",
+        "drupal/taxonomy_container": "*",
+        "drupal/token": "*",
+        "drupal/views_autocomplete_filters": "*",
+        "drupal/views_templates": "*",
+        "drupal/devel": "*"
+    },
+    "replace": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        }
+    },
+    "config": {
+        "process-timeout": 1200
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\composer_manager\\Composer\\": "docroot/modules/contrib/composer_manager/src/Composer"
+        }
+    },
+    "scripts": {
+        "drupal-rebuild": "Drupal\\composer_manager\\Composer\\Command::rebuild",
+        "drupal-update": "Drupal\\composer_manager\\Composer\\Command::update"
+    }
+}
