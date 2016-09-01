@@ -1,8 +1,14 @@
 ** Drupal VM Box **
 
+A vm setup for the WQMP project
+just clone repo and 
+
+    $ vagrant up
+    
 
 _TODO_ : make composer handle contrib modules
 
+```
     - "composer/installers"   : "^1.0.20"
     - "drupal-composer/drupal-scaffold"   : "^2.0.1"
     - "drupal/core": "~8.0"
@@ -33,3 +39,4 @@ _TODO_ : make composer handle contrib modules
     - "drupal/token" : "~8.0"
     - "drupal/views_autocomplete_filters" : "~8.0"
     - "drupal/views_templates" : "~8.0"
+```
