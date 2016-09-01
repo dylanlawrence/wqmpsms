@@ -2,10 +2,16 @@
 
 A vm setup for the WQMP project
 
-To install just clone this repo and `vagrant up` then create the directory `web` inside `/site/drupal/web`
+To install just clone this repo and `vagrant up` 
 
     $ vagrant up
    
+Then create the directory `web` inside `/site/drupal/web`   
+   
+
+    $ cd site/drupal
+    $ git clone [repo] web
+
 
 _TODO_ : make composer handle contrib modules
 
