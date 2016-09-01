@@ -1,5 +1,5 @@
 *.idea
-site/drupal/
+site/drupal/web/
 
 *.log
 .vagrant/
