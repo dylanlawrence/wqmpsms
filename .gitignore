@@ -1,6 +1,5 @@
 *.idea
-site/drupal/vendor/*
-site/drupal/docroot/core/*
-site/drupal/docroot/vendor/*
-site/drupal/docroot/modules/contrib*
-site/drupal/docroot/sites/default/files/*
+site/drupal/
+
+*.log
+.vagrant/
