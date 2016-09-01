@@ -1,14 +1,11 @@
 ** Drupal VM Box **
 
 A vm setup for the WQMP project
-just clone repo and 
+
+To install just clone this repo and `vagrant up` then create the directory `web` inside `/site/drupal/web`
 
     $ vagrant up
-    
-put clone site into 
-    
-    /site/drupal/web
-
+   
 
 _TODO_ : make composer handle contrib modules
 
